@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Пластиковые окна в Симферополе — купить от производителя | Русские окна</title>
+	<meta name="description" content="Пластиковые окна REHAU в Симферополе. Подбор профиля, стеклопакета и комплектации, расчёт стоимости, изготовление, доставка и монтаж. Узнайте цену по вашим размерам.">
+	<meta name="keywords" content="купить пластиковые окна, окна, окна симферополь, окна рехау симферополь">
+	<meta name="robots" content="index,follow">
+	<link rel="canonical" href="https://rus-okna.ru/">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<meta property="og:title" content="Пластиковые окна REHAU в Симферополе — Русские окна">
+	<meta property="og:description" content="Окна от завода в Симферополе: расчёт за 1 минуту, бесплатный замер, изготовление и монтаж.">
+	<meta property="og:image" content="https://rus-okna.ru/img/hero.jpg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preload" as="image" href="img/hero.jpg">
+</head>
+<body>
+
+<!-- ============ ШАПКА ============ -->
+<header class="header" id="top">
+	<div class="container header__inner">
+		<a href="/" class="logo" aria-label="Русские окна — на главную">
+			<img src="img/logo-sm.png" alt="Заводские пластиковые окна РЕХАУ в Симферополе" width="220" height="82">
+		</a>
+		<nav class="nav" id="nav" aria-label="Основное меню">
+			<a href="#about">О компании</a>
+			<a href="#profiles">Окна</a>
+			<a href="#prices">Цены</a>
+			<a href="/osteklenie-balkonov-pod-klyuch">Балконы</a>
+			<a href="/plastikovye-dveri">Двери</a>
+			<a href="/alyuminij">Алюминий</a>
+			<a href="#contacts">Контакты</a>
+		</nav>
+		<div class="header__contact">
+			<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+			<div>
+				<a class="header__phone" href="tel:+79788305553">+7 (978) 830-55-53</a>
+				<div class="header__hours">Ежедневно с 9:00 до 17:00</div>
+			</div>
+		</div>
+		<button class="btn btn--dark header__cta" data-modal="callback">Заказать звонок</button>
+		<button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+	</div>
+</header>
+
+<main>
+
+<!-- ============ ЭКРАН 1: ПЕРВЫЙ ЭКРАН + КАЛЬКУЛЯТОР ============ -->
+<section class="hero">
+	<div class="hero__bg" aria-hidden="true"></div>
+	<div class="container hero__inner">
+		<div class="hero__text">
+			<p class="eyebrow">Больше, чем окна</p>
+			<h1 class="hero__title">Пластиковые окна <span>в Симферополе</span></h1>
+			<p class="hero__lead">Современные пластиковые окна REHAU с установкой под ключ в Симферополе и по Крыму. Цены от производителя.</p>
+			<ul class="hero__features">
+				<li>
+					<svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20M12 21 8 9l4-6 4 6z"/></svg>
+					<span>Немецкий профиль REHAU</span>
+				</li>
+				<li>
+					<svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 6-14 15-15-1 9-7 15-15 15z"/><path d="M5 19 13 11"/></svg>
+					<span>Тепло и тишина круглый год</span>
+				</li>
+				<li>
+					<svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
+					<span>Монтаж по ГОСТ, гарантия 3&nbsp;года</span>
+				</li>
+			</ul>
+		</div>
+
+		<p class="hero__note" aria-hidden="true">Хороший вид<br>на большие<br>планы ♡</p>
+
+		<!-- Онлайн-калькулятор -->
+		<div class="calc" id="calc">
+			<p class="eyebrow eyebrow--sm">Онлайн-калькулятор</p>
+			<h2 class="calc__title">Рассчитайте стоимость ваших окон <span>за 1 минуту</span></h2>
+			<ol class="calc__steps" aria-label="Шаги расчёта">
+				<li class="is-active"><b>1</b>Тип</li>
+				<li><b>2</b>Размеры</li>
+				<li><b>3</b>Опции</li>
+				<li><b>4</b>Результат</li>
+			</ol>
+
+			<form class="calc__form" id="calcForm" novalidate>
+				<!-- шаг 1 -->
+				<fieldset class="calc__pane is-active" data-step="1">
+					<legend>Выберите тип помещения</legend>
+					<div class="tiles">
+						<label class="tile">
+							<input type="radio" name="object" value="Квартира" data-k="1" checked>
+							<span><svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 21V3h12v18M9 7h1M14 7h1M9 11h1M14 11h1M9 15h1M14 15h1M10 21v-3h4v3"/></svg>Квартира</span>
+						</label>
+						<label class="tile">
+							<input type="radio" name="object" value="Частный дом" data-k="1.05">
+							<span><svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 3l9 8M5 9.5V21h14V9.5M10 21v-6h4v6"/></svg>Частный дом</span>
+						</label>
+						<label class="tile">
+							<input type="radio" name="object" value="Балкон / лоджия" data-k="1.1">
+							<span><svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V4h16v17M4 13h16M12 4v9M4 21h16M8 13v8M16 13v8"/></svg>Балкон / Лоджия</span>
+						</label>
+						<label class="tile">
+							<input type="radio" name="object" value="Коммерческое помещение" data-k="1.05">
+							<span><svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9 5 4h14l2 5M3 9h18M4 9v12h16V9M7 13h4v4H7zM14 13h3v8"/></svg>Коммерческое помещение</span>
+						</label>
+					</div>
+				</fieldset>
+
+				<!-- шаг 2 -->
+				<fieldset class="calc__pane" data-step="2">
+					<legend>Укажите размеры окна</legend>
+					<div class="fields">
+						<label class="field"><span>Ширина, мм</span><input type="number" name="width" min="300" max="6000" step="10" value="1300" inputmode="numeric"></label>
+						<label class="field"><span>Высота, мм</span><input type="number" name="height" min="300" max="3000" step="10" value="1400" inputmode="numeric"></label>
+						<label class="field"><span>Количество окон</span><input type="number" name="qty" min="1" max="50" value="1" inputmode="numeric"></label>
+					</div>
+					<p class="calc__label">Количество створок</p>
+					<div class="chips">
+						<label class="chip"><input type="radio" name="sash" value="1" data-k="1.15"><span>1</span></label>
+						<label class="chip"><input type="radio" name="sash" value="2" data-k="1" checked><span>2</span></label>
+						<label class="chip"><input type="radio" name="sash" value="3" data-k="0.97"><span>3</span></label>
+						<label class="chip"><input type="radio" name="sash" value="Балконный блок" data-k="0.81"><span>Балконный блок</span></label>
+					</div>
+				</fieldset>
+
+				<!-- шаг 3 -->
+				<fieldset class="calc__pane" data-step="3">
+					<legend>Профиль и опции</legend>
+					<div class="chips chips--profiles" id="calcProfiles"></div>
+					<div class="checks">
+						<label class="check"><input type="checkbox" name="opt" value="Монтаж" checked><span>Монтаж</span></label>
+						<label class="check"><input type="checkbox" name="opt" value="Подоконник"><span>Подоконник</span></label>
+						<label class="check"><input type="checkbox" name="opt" value="Отлив"><span>Отлив</span></label>
+						<label class="check"><input type="checkbox" name="opt" value="Откосы"><span>Откосы</span></label>
+						<label class="check"><input type="checkbox" name="opt" value="Москитная сетка"><span>Москитная сетка</span></label>
+						<label class="check"><input type="checkbox" name="opt" value="Демонтаж старых окон"><span>Демонтаж</span></label>
+					</div>
+				</fieldset>
+
+				<!-- шаг 4 -->
+				<fieldset class="calc__pane" data-step="4">
+					<legend class="sr-only">Результат</legend>
+					<div class="calc__result">
+						<span>Ориентировочная стоимость окон</span>
+						<strong id="calcTotal">—</strong>
+						<small id="calcSummary"></small>
+					</div>
+					<div class="fields fields--2">
+						<label class="field"><span>Ваше имя</span><input type="text" name="name" autocomplete="name"></label>
+						<label class="field"><span>Телефон*</span><input type="tel" name="phone" autocomplete="tel" placeholder="+7 (___) ___-__-__" required></label>
+					</div>
+					<p class="calc__hint">Точную цену со скидкой менеджер назовёт после уточнения размеров и комплектации.</p>
+				</fieldset>
+
+				<div class="calc__nav">
+					<button type="button" class="btn btn--ghost calc__back" hidden>Назад</button>
+					<button type="button" class="btn btn--dark btn--lg calc__next">Далее <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+					<button type="submit" class="btn btn--dark btn--lg calc__submit" hidden>Получить точный расчёт</button>
+				</div>
+				<p class="calc__free">Это бесплатно и ни к чему не обязывает</p>
+			</form>
+		</div>
+	</div>
+</section>
+
+<!-- ============ ЭКРАН 2: РЕШЕНИЯ ============ -->
+<section class="section" id="solutions">
+	<div class="container">
+		<div class="section-head">
+			<h2 class="h2">Решения для любых задач</h2>
+			<span class="section-head__line" aria-hidden="true"></span>
+			<p class="section-head__text">Подберём оптимальные окна под ваш бюджет, стиль и особенности помещения.</p>
+			<a class="link-arrow" href="/plastikovye-okna-rehau">Смотреть все решения →</a>
+		</div>
+		<!--
+			Чтобы добавить новое решение — скопируйте любой <a class="solution">…</a>
+			и поменяйте ссылку, картинку и тексты. Сетка перестроится сама.
+		-->
+		<div class="solutions">
+			<a class="solution" href="/plastikovye-okna-rehau">
+				<img src="img/sol-flat.jpg" alt="Пластиковые окна в квартире" loading="lazy" width="900" height="600">
+				<div class="solution__body">
+					<div><h3>Для квартиры</h3><p>Тепло, тишина и комфорт</p></div>
+					<span class="circle-arrow" aria-hidden="true">→</span>
+				</div>
+			</a>
+			<a class="solution" href="/plastikovye-okna-rehau">
+				<img src="img/sol-house.jpg" alt="Остекление частного дома" loading="lazy" width="900" height="600">
+				<div class="solution__body">
+					<div><h3>Для загородного дома</h3><p>Надёжность в любую погоду</p></div>
+					<span class="circle-arrow" aria-hidden="true">→</span>
+				</div>
+			</a>
+			<a class="solution" href="/osteklenie-balkonov-pod-klyuch">
+				<img src="img/sol-balcony.jpg" alt="Остекление балконов и террас" loading="lazy" width="900" height="600">
+				<div class="solution__body">
+					<div><h3>Остекление балконов</h3><p>Больше пространства для жизни</p></div>
+					<span class="circle-arrow" aria-hidden="true">→</span>
+				</div>
+			</a>
+			<a class="solution" href="/alyuminij">
+				<img src="img/sol-business.jpg" alt="Алюминиевое остекление для бизнеса" loading="lazy" width="900" height="600">
+				<div class="solution__body">
+					<div><h3>Для бизнеса</h3><p>Алюминий и витражи для офисов и коммерции</p></div>
+					<span class="circle-arrow" aria-hidden="true">→</span>
+				</div>
+			</a>
+		</div>
+	</div>
+</section>
+
+<!-- ============ ЭКРАН 3: ПРОФИЛЬНЫЕ СИСТЕМЫ ============ -->
+<section class="section section--soft" id="profiles">
+	<div class="container">
+		<div class="section-head">
+			<h2 class="h2">Профильные системы РЕХАУ</h2>
+			<span class="section-head__line" aria-hidden="true"></span>
+			<p class="section-head__text">Цена указана за глухое окно без установки. Нажмите на название профиля, чтобы узнать подробности.</p>
+		</div>
+		<div class="profiles" id="profilesList"><!-- заполняется из js/main.js (PROFILES) --></div>
+	</div>
+</section>
+
+<!-- ============ ЭКРАН 4: КАК МЫ РАБОТАЕМ ============ -->
+<section class="section" id="steps">
+	<div class="container">
+		<div class="section-head">
+			<h2 class="h2">Как мы работаем</h2>
+			<span class="section-head__line" aria-hidden="true"></span>
+			<p class="section-head__text section-head__text--right">Просто, прозрачно, надёжно</p>
+		</div>
+		<ol class="steps">
+			<li class="step">
+				<div class="step__top"><svg class="ico ico--xl" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 21l1.5-4.6A8 8 0 1 1 21 12z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></svg><b>01</b></div>
+				<h3>Оставляете заявку</h3><p>на сайте или по телефону</p>
+			</li>
+			<li class="step">
+				<div class="step__top"><svg class="ico ico--xl" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6v18h12V7z"/><path d="M14 3v4h4M9 12h6M9 16h6M9 8h2"/></svg><b>02</b></div>
+				<h3>Согласуем детали</h3><p>подберём профиль и комплектацию</p>
+			</li>
+			<li class="step">
+				<div class="step__top"><svg class="ico ico--xl" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="11" cy="8" rx="7" ry="4"/><path d="M4 8v8c0 2.2 3.1 4 7 4h9v-4h-2M18 8v8"/><ellipse cx="11" cy="8" rx="2.5" ry="1.3"/></svg><b>03</b></div>
+				<h3>Бесплатный замер</h3><p>в удобное время и фиксируем стоимость</p>
+			</li>
+			<li class="step">
+				<div class="step__top"><svg class="ico ico--xl" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg><b>04</b></div>
+				<h3>Изготовление</h3><p>на собственном производстве</p>
+			</li>
+			<li class="step">
+				<div class="step__top"><svg class="ico ico--xl" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7z"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><b>05</b></div>
+				<h3>Доставка и монтаж</h3><p>в оговорённый срок, по ГОСТ</p>
+			</li>
+		</ol>
+	</div>
+</section>
+
+<!-- ============ ЭКРАН 5: ЦЕНЫ ============ -->
+<section class="section section--soft" id="prices">
+	<div class="container">
+		<div class="section-head">
+			<h2 class="h2">Цены на пластиковые окна</h2>
+			<span class="section-head__line" aria-hidden="true"></span>
+			<p class="section-head__text">Ориентировочная стоимость без монтажа, подоконника и отлива. Точную цену назовём после замера.</p>
+		</div>
+		<div class="tabs" role="tablist" id="priceTabs"></div>
+		<div class="prices" id="priceCards" role="tabpanel"></div>
+	</div>
+</section>
+
+<!-- ============ ЭКРАН 6: ПЕРЕСЧЁТ СМЕТЫ ============ -->
+<section class="offer" id="estimate">
+	<div class="container offer__inner">
+		<div class="offer__text">
+			<p class="badge">Выгодное предложение</p>
+			<h2 class="h2 h2--light">Пересчитаем предложение другой компании со скидкой</h2>
+			<p class="offer__lead">Уже получили коммерческое предложение от другой компании? Пришлите нам смету — мы сделаем пересчёт и предложим те же окна РЕХАУ дешевле или объясним разницу в комплектации.</p>
+			<ul class="offer__list">
+				<li><i>✓</i><span><b>Честное сравнение комплектации.</b> Разберём, что именно входит в чужую смету — профиль, стеклопакет, фурнитура, монтаж.</span></li>
+				<li><i>₽</i><span><b>Предложим лучшую цену.</b> Цены от производителя — без посредников и переплат.</span></li>
+				<li><i>◷</i><span><b>Ответ в течение 30 минут</b> в рабочее время: менеджер изучит смету и перезвонит с конкретным предложением.</span></li>
+				<li><i>◇</i><span><b>Гарантия качества и монтажа.</b> Договор, гарантийный талон, электронный сертификат REHAU.</span></li>
+			</ul>
+		</div>
+		<form class="card form" data-form="Пересчёт сметы" enctype="multipart/form-data" novalidate>
+			<h3>Пришлите смету — пересчитаем</h3>
+			<p class="form__sub">Укажите контакт и прикрепите смету или фото предложения конкурента.</p>
+			<label class="field"><span>Ваше имя</span><input type="text" name="name" autocomplete="name"></label>
+			<label class="field"><span>Телефон*</span><input type="tel" name="phone" autocomplete="tel" placeholder="+7 (___) ___-__-__" required></label>
+			<label class="file">
+				<input type="file" name="files[]" multiple accept=".pdf,.doc,.docx,.xls,.xlsx,.rtf,.txt,.jpg,.jpeg,.png,.heic">
+				<span class="file__label">📎 Прикрепить смету (фото, PDF, Word, Excel) — до 5 файлов</span>
+			</label>
+			<label class="field"><span>Комментарий</span><textarea name="comment" rows="3"></textarea></label>
+			<input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+			<button type="submit" class="btn btn--accent btn--lg btn--block">Отправить смету на пересчёт</button>
+			<p class="form__policy">Нажимая кнопку, вы соглашаетесь с <a href="/policy">политикой конфиденциальности</a></p>
+		</form>
+	</div>
+</section>
+
+<!-- ============ ЭКРАН 7: О КОМПАНИИ ============ -->
+<section class="section" id="about">
+	<div class="container about">
+		<div class="about__media">
+			<img src="img/about.jpg" alt="Пластиковые окна РЕХАУ в интерьере" loading="lazy" width="1200" height="800">
+			<div class="about__badge"><b>70+</b><span>лет REHAU<br>на мировом рынке</span></div>
+		</div>
+		<div class="about__text">
+			<p class="badge badge--light">О компании</p>
+			<h2 class="h2">Пластиковые окна РЕХАУ в&nbsp;Симферополе</h2>
+			<p>Компания «Русские окна» — заводские пластиковые окна на базе профильных систем REHAU для квартир, частных домов и коммерческих объектов в Симферополе и по Крыму. Собственное производство позволяет держать цены производителя и контролировать качество на каждом этапе — от профиля до фурнитуры.</p>
+			<p>Учитываем особенности крымского климата: окна не промерзают зимой, не перегреваются летом, защищают от шума и пыли. На стоимость готовой конструкции влияют размеры, стеклопакет, фурнитура, количество створок и способ открывания — поэтому мы подбираем конфигурацию под ваш проём и бюджет.</p>
+			<p>Хотите быть уверены, что покупаете оригинальный REHAU? Потребуйте электронный сертификат: QR-код должен вести на официальный сайт <b>cert.partners.rhsolutions.ru</b>.</p>
+			<div class="stats">
+				<div class="stat"><b>до 60</b><span>лет срок службы профиля</span></div>
+				<div class="stat"><b>80</b><span>параметров контроля качества</span></div>
+				<div class="stat"><b>до 45 дБ</b><span>шумоизоляция</span></div>
+				<div class="stat"><b>до 40%</b><span>скидки на остекление коттеджей</span></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============ ЭКРАН 8: КАРТА + КОНСУЛЬТАЦИЯ ============ -->
+<section class="trust" id="contacts">
+	<div class="container trust__inner">
+		<div class="trust__map">
+			<iframe src="https://yandex.ru/map-widget/v1/?ll=33.509161%2C44.583019&amp;z=16&amp;pt=33.509161%2C44.583019%2Cpm2rdm" title="Офис продаж на карте" loading="lazy" allowfullscreen></iframe>
+			<div class="trust__address">
+				<b>Офис продаж заводских окон REHAU</b>
+				<span>г. Симферополь, ул. Екатерининская, 50<br>(ул. Карла Маркса, 50)</span>
+				<span>Пн–Вс 9:00–17:00 · визит по предварительному звонку</span>
+			</div>
+		</div>
+		<div class="trust__text">
+			<h2 class="h2">Доверьте окна профессионалам</h2>
+			<p class="trust__lead">Бесплатная консультация, точный расчёт и честные сроки — без скрытых платежей.</p>
+			<button class="btn btn--dark btn--lg" data-modal="callback">Получить консультацию <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+			<p class="trust__small">Ответим на все вопросы</p>
+		</div>
+		<div class="card trust__card">
+			<div class="trust__row">
+				<svg class="ico ico--xl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
+				<p><b>Гарантия</b> на изделия и монтаж</p>
+			</div>
+			<div class="trust__row">
+				<svg class="ico ico--xl" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V10l5 3V10l5 3V6l8 4v11z"/><path d="M7 17h2M12 17h2M17 17h1"/></svg>
+				<p><b>Собственное производство</b> в Симферополе</p>
+			</div>
+			<div class="trust__contacts">
+				<a href="tel:+79788305553">+7 (978) 830-55-53</a>
+				<a href="mailto:manager180@mail.ru">manager180@mail.ru</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+</main>
+
+<!-- ============ ПОДВАЛ ============ -->
+<footer class="footer">
+	<div class="container footer__inner">
+		<div>
+			<img src="img/logo-sm.png" alt="Русские окна" width="160" height="60" class="footer__logo">
+			<p>Официальный завод окон РЕХАУ.<br>Завод окон №1 в Симферополе.</p>
+		</div>
+		<div>
+			<h4>Услуги</h4>
+			<a href="/plastikovye-okna-rehau">Окна</a>
+			<a href="/osteklenie-balkonov-pod-klyuch">Балконы</a>
+			<a href="/plastikovye-dveri">Двери</a>
+			<a href="/alyuminij">Алюминий</a>
+			<a href="/ceny-na-plastikovye-okna-v-simferopole">Цены</a>
+		</div>
+		<div>
+			<h4>Ваш РЕХАУ</h4>
+			<a href="/plastikovye-okna-rehau/plastikovye-okna-rehau-blitz-new">Блиц</a>
+			<a href="/plastikovye-okna-rehau/plastikovoe-okno-rehau-euro-60">Константа</a>
+			<a href="/plastikovye-okna-rehau/plastikovye-okna-rehau-delight">Делайт</a>
+			<a href="/plastikovye-okna-rehau/rehau-grazio">Грацио</a>
+			<a href="/plastikovye-okna-rehau/rehau-intelio">Интелио</a>
+			<a href="/okna-roshan-v-simferopole">ROSHAN</a>
+		</div>
+		<div>
+			<h4>Контакты</h4>
+			<p>г. Симферополь, ул. Екатерининская, 50</p>
+			<a href="tel:+79788305553">+7 (978) 830-55-53</a>
+			<a href="mailto:manager180@mail.ru">manager180@mail.ru</a>
+		</div>
+	</div>
+	<div class="container footer__bottom">
+		<span>© <span id="year">2026</span> ИП Семёнов М.В. Все права защищены.</span>
+		<a href="/policy">Политика конфиденциальности</a>
+	</div>
+</footer>
+
+<!-- Плавающая кнопка звонка (мобильные) -->
+<a class="fab" href="tel:+79788305553" aria-label="Позвонить">
+	<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+</a>
+
+<!-- Модальное окно «Заказать звонок» -->
+<div class="modal" id="modal-callback" hidden>
+	<div class="modal__overlay" data-close></div>
+	<form class="card form modal__box" data-form="Обратный звонок" novalidate role="dialog" aria-modal="true" aria-labelledby="cbTitle">
+		<button type="button" class="modal__close" data-close aria-label="Закрыть">×</button>
+		<h3 id="cbTitle">Перезвоним за 5 минут</h3>
+		<p class="form__sub">Проконсультируем, рассчитаем стоимость и запишем на бесплатный замер.</p>
+		<input type="hidden" name="subject" value="">
+		<label class="field"><span>Ваше имя</span><input type="text" name="name" autocomplete="name"></label>
+		<label class="field"><span>Телефон*</span><input type="tel" name="phone" autocomplete="tel" placeholder="+7 (___) ___-__-__" required></label>
+		<input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+		<button type="submit" class="btn btn--dark btn--lg btn--block">Жду звонка</button>
+		<p class="form__policy">Нажимая кнопку, вы соглашаетесь с <a href="/policy">политикой конфиденциальности</a></p>
+	</form>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/main.js"></script>
+<!-- Яндекс.Метрика (счётчик 90301814) — вставьте сюда официальный код счётчика из кабинета Метрики -->
+</body>
+</html>
