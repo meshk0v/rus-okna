@@ -12,11 +12,11 @@
 	 *   base       — цена окна 1100×1400 без монтажа (база для блока «Цены» и калькулятора)
 	 */
 	var PROFILES = [
-		{ id: 'blitz', name: 'Blitz New', ru: 'Блиц', url: '/plastikovye-okna-rehau/plastikovye-okna-rehau-blitz-new', img: 'img/profile-blitz.png', stars: 4, priceFrom: 4500, base: 9500, chambers: 3, depth: 60, glass: 32, heat: '0,70', fittings: 'Roto', tip: 'Базовый профиль REHAU для городских квартир: высокое качество по доступной цене.' },
-		{ id: 'constanta', name: 'Constanta', ru: 'Константа', url: '/plastikovye-okna-rehau/plastikovoe-okno-rehau-euro-60', img: 'img/profile-constanta.png', stars: 4, priceFrom: 5000, base: 10000, chambers: 4, depth: 60, glass: 32, heat: '0,74', fittings: 'Roto', tip: 'Профиль Thermo 60: повышенная взломобезопасность и выбор цвета створки.' },
-		{ id: 'grazio', name: 'Grazio', ru: 'Грацио', url: '/plastikovye-okna-rehau/rehau-grazio', img: 'img/profile-grazio.png', stars: 5, priceFrom: 5500, base: 10800, chambers: 5, depth: 70, glass: 40, heat: '0,85', fittings: 'Roto', tip: 'Средний ценовой сегмент: 70 мм и 5 камер, заметно теплее базовых систем.' },
-		{ id: 'delight', name: 'Delight-Design', ru: 'Делайт', url: '/plastikovye-okna-rehau/plastikovye-okna-rehau-delight', img: 'img/profile-delight.png', stars: 5, priceFrom: 5900, base: 11500, chambers: 5, depth: 70, glass: 44, heat: '0,80', fittings: 'Roto', tip: 'Узкая рама — больше света без потери тепло- и шумоизоляции.' },
-		{ id: 'intelio', name: 'Intelio', ru: 'Интелио', url: '/plastikovye-okna-rehau/rehau-intelio', img: 'img/profile-intelio.png', stars: 5, priceFrom: 8000, base: 15500, chambers: 6, depth: 80, glass: 50, heat: '0,95', fittings: 'Siegenia', tip: 'Премиум: очень тепло и очень тихо — шумоизоляция до 45 дБ.' }
+		{ id: 'blitz', name: 'Blitz New', ru: 'Блиц', url: 'https://rus-okna.ru/plastikovye-okna-rehau/plastikovye-okna-rehau-blitz-new', img: 'img/profile-blitz.png', stars: 4, priceFrom: 4500, base: 9500, chambers: 3, depth: 60, glass: 32, heat: '0,70', fittings: 'Roto', tip: 'Базовый профиль REHAU для городских квартир: высокое качество по доступной цене.' },
+		{ id: 'constanta', name: 'Constanta', ru: 'Константа', url: 'https://rus-okna.ru/plastikovye-okna-rehau/plastikovoe-okno-rehau-euro-60', img: 'img/profile-constanta.png', stars: 4, priceFrom: 5000, base: 10000, chambers: 4, depth: 60, glass: 32, heat: '0,74', fittings: 'Roto', tip: 'Профиль Thermo 60: повышенная взломобезопасность и выбор цвета створки.' },
+		{ id: 'grazio', name: 'Grazio', ru: 'Грацио', url: 'https://rus-okna.ru/plastikovye-okna-rehau/rehau-grazio', img: 'img/profile-grazio.png', stars: 5, priceFrom: 5500, base: 10800, chambers: 5, depth: 70, glass: 40, heat: '0,85', fittings: 'Roto', tip: 'Средний ценовой сегмент: 70 мм и 5 камер, заметно теплее базовых систем.' },
+		{ id: 'delight', name: 'Delight-Design', ru: 'Делайт', url: 'https://rus-okna.ru/plastikovye-okna-rehau/plastikovye-okna-rehau-delight', img: 'img/profile-delight.png', stars: 5, priceFrom: 5900, base: 11500, chambers: 5, depth: 70, glass: 44, heat: '0,80', fittings: 'Roto', tip: 'Узкая рама — больше света без потери тепло- и шумоизоляции.' },
+		{ id: 'intelio', name: 'Intelio', ru: 'Интелио', url: 'https://rus-okna.ru/plastikovye-okna-rehau/rehau-intelio', img: 'img/profile-intelio.png', stars: 5, priceFrom: 8000, base: 15500, chambers: 6, depth: 80, glass: 50, heat: '0,95', fittings: 'Siegenia', tip: 'Премиум: очень тепло и очень тихо — шумоизоляция до 45 дБ.' }
 	];
 	var BASE_AREA = 1.1 * 1.4;
 
@@ -54,7 +54,7 @@
 			'<a href="' + p.url + '"><img class="profile__img" src="' + p.img + '" alt="Профиль REHAU ' + esc(p.name) + ' в разрезе" loading="lazy" width="200" height="260"></a>' +
 			'<a class="profile__name" href="' + p.url + '">' + esc(p.name) + '</a>' +
 			'<div class="stars" aria-label="Класс ' + p.stars + ' из 5">' + stars + '</div>' +
-			'<div class="profile__price"><span>Цена<br>от:</span><b>' + fmt(p.priceFrom) + '</b></div>' +
+			'<div class="profile__price"><span>Цена от:</span><b>' + fmt(p.priceFrom) + '</b></div>' +
 			'<ul class="specs">' +
 				'<li>Число камер<b>' + p.chambers + '</b></li>' +
 				'<li>Глубина<b>' + p.depth + ' мм</b></li>' +
